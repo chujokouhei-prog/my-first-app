@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>こんにちは</title>
+    <title>About</title>
     <style>
       body {
         margin: 0;
@@ -11,10 +11,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 2rem;
+        padding: 6rem 1.5rem 3rem;
         font-family: "Hiragino Kaku Gothic Pro", "Yu Gothic", "Noto Sans JP", sans-serif;
         background-color: #f7f9fb;
+        color: #1f2933;
       }
 
       nav {
@@ -37,25 +37,11 @@
         text-decoration: underline;
       }
 
-      h1 {
-        font-size: 4rem;
-        margin: 0;
-        color: #1f2933;
-      }
-
-      button {
-        font-size: 1.5rem;
-        padding: 0.5rem 1.5rem;
-        border: none;
-        border-radius: 0.5rem;
-        background-color: #007acc;
-        color: #fff;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-      }
-
-      button:hover {
-        background-color: #005ea6;
+      main {
+        max-width: 720px;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        text-align: center;
       }
     </style>
   </head>
@@ -64,17 +50,8 @@
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
     </nav>
-
-    <h1 id="greeting">こんにちは</h1>
-    <button type="button" id="greetButton">挨拶する</button>
-
-    <script>
-      const greeting = document.getElementById("greeting");
-      const button = document.getElementById("greetButton");
-
-      button.addEventListener("click", () => {
-        greeting.textContent = "ようこそ";
-      });
-    </script>
+    <main>
+      <p>こんにちは、フロントエンドとユーザー体験に情熱を注ぐ開発者の田中です。デザインと技術の融合を大切にしながら、使う人の気持ちに寄り添ったウェブアプリケーションを作ることを目標に日々学び続けています。休日は街のカフェを巡り、そこで得たインスピレーションを新しいアイデアに落とし込むのが楽しみです。</p>
+    </main>
   </body>
 </html>
